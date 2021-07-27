@@ -74,7 +74,7 @@ var params = {
         }
     ],
     env: 'dev',
-    pluginId: pluginId:"plugin-Example_pluginid"
+    pluginId: "plugin-Example_pluginid"
 };
 ```
 2. INSERT  
