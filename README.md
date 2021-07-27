@@ -10,11 +10,10 @@
 ![plot](./assets/1.png)  
 
 3. +버튼을 클릭하여 새 플러그인을 생성합니다.  
-![plot](./assets/2.png)  
 
 4. 새 플러그인이 생성되면 플러그인 상세정보 페이지로 이동합니다.  
 ![plot](./assets/3.png)  
 
 5. 테이블 이름을 설정한 후, SQL파일을 업로드하여 DB 테이블을 생성합니다.  
-![plot](./assets/4.png)  
+![plot](./assets/4.png)    
 Plugin ID, Key값을 가져옵니다.
