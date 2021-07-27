@@ -17,3 +17,7 @@
 5. 테이블 이름을 설정한 후, SQL파일을 업로드하여 DB 테이블을 생성합니다.  
 ![plot](./assets/4.png)    
 Plugin ID, Key값을 가져옵니다.
+
+## 만든 테이블을 플러그인 내부에서 사용하는 방법
+1. 플러그인 내 메인JS 파일의 $B.init 함수의 token, pluginId 값을 위에서 가져온 Plugin ID, Key값으로 변경합니다.  
+![plot](./assets/5.png)  
