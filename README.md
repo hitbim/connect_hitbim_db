@@ -55,6 +55,7 @@ bim.db.query(params, function (res) { // get DB response by callback
 ```
 
 ## 쿼리 예시
+email, pass, username, active : Column name
 
 1. SELECT
 ```
@@ -83,16 +84,48 @@ var params = {
         table: 'table_name',
         rows:{
            email: email_val,
-           pass: formData.password_val,
-           username: formData.username_val,
+           pass: password_val,
+           username: username_val,
            active: 1
+           }
         }
-       }
     ],
     env: 'dev',
     pluginId:"plugin-Example_pluginid"
 };
 ```
 3. UPDATE  
-
+```
+var params = {
+    query: [{
+        query: "UPDATE",
+        table: "table_name",
+        rows: {
+            email: email_val,
+        },
+        where: {
+            username: username_val,
+            active: 1
+            },
+    }],
+    env: "dev",
+    pluginId:"plugin-Example_pluginid"
+}
+```
 4. DELETE
+```
+var params = {
+    query:[
+        {
+            query:  'DELETE',
+            table: 'table_name',
+            where:{
+                user_id: userid_val,
+                active: 1
+            }
+        }
+    ],
+    env: 'dev',
+    pluginId: "plugin-Example_pluginid"
+};
+```
