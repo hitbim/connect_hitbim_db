@@ -21,3 +21,27 @@ Plugin ID, Key값을 가져옵니다.
 ## 만든 테이블을 플러그인 내부에서 사용하는 방법
 1. 플러그인 내 메인JS 파일의 $B.init 함수의 token, pluginId 값을 위에서 가져온 Plugin ID, Key값으로 변경합니다.  
 ![plot](./assets/5.png)  
+
+2. DB와의 연동이 끝났습니다!  
+
+## 쿼리를 전송하는 방법
+Hitbim DB는 다음과 같은 방식으로 동작합니다.
+
+1. 사용할 쿼리를 정의합니다.
+
+```
+var param = {
+    query:[
+     {
+      query:  'SELECT', // SELECT, INSERT, DELETE etc
+      table: 'Table_name', // Table name
+      where:{ // Where A and B
+        condition1 : uid,
+        condition2 : 'cond2'
+      }
+     }
+    ],
+    env: 'dev',
+    pluginId:"plugin-Examplepluginid" // Plugin ID from website
+};
+```
