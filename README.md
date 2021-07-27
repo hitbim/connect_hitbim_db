@@ -45,3 +45,11 @@ var param = {
     pluginId:"plugin-Examplepluginid" // Plugin ID from website
 };
 ```
+
+2. bim.db.query 함수를 통해 쿼리를 전송하고, 응답을 받습니다.
+
+```
+bim.db.query(params, function (res) { // get DB response by callback
+    console.log(res[0].data)
+});
+```
