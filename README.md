@@ -42,7 +42,7 @@ var param = {
      }
     ],
     env: 'dev',
-    pluginId:"plugin-Examplepluginid" // Plugin ID from website
+    pluginId:"plugin-Example_pluginid" // Plugin ID from website
 };
 ```
 
@@ -53,3 +53,46 @@ bim.db.query(params, function (res) { // get DB response by callback
     console.log(res[0].data)
 });
 ```
+
+## 쿼리 예시
+
+1. SELECT
+```
+var params = {
+    query:[
+        {
+        query:  'SELECT',
+        table: 'table_name',
+        where: {
+            email: email_val,
+            pass: password_val,
+            username: username_val
+            },
+        }
+    ],
+    env: 'dev',
+    pluginId: pluginId:"plugin-Example_pluginid"
+};
+```
+2. INSERT  
+```
+var params = {
+    query:[
+       {
+        query:  'INSERT',
+        table: 'table_name',
+        rows:{
+           email: email_val,
+           pass: formData.password_val,
+           username: formData.username_val,
+           active: 1
+        }
+       }
+    ],
+    env: 'dev',
+    pluginId:"plugin-Example_pluginid"
+};
+```
+3. UPDATE  
+
+4. DELETE
