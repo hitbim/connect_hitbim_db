@@ -129,3 +129,4 @@ var params = {
     pluginId: "plugin-Example_pluginid"
 };
 ```
+그 외 쿼리들의 예시는 이 리포지토리에 동봉된 DB_params.js 파일을 참조하시기 바랍니다.
