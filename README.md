@@ -130,4 +130,4 @@ var params = {
     pluginId: "plugin-Example_pluginid"
 };
 ```
-그 외에도 JOIN, LIMIT, ORDERBY 등 대부분의 쿼리를 사용할 수 있으며, 그 예시는 리포지토리에 동봉된 DB_params.js 파일을 참조하시기 바랍니다.
+그 외에도 JOIN, LIMIT, ORDERBY 등 대부분의 쿼리를 사용할 수 있으며, 그 예시는 동봉된 DB_params.js 파일을 참조하시기 바랍니다.
