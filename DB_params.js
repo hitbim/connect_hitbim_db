@@ -1,4 +1,5 @@
 // my statement, can inject query to DB directly
+// ONLY CAN USE 'SELECT' TO BLOCK SQL INJECTION
 var params = {
     query:
         {
